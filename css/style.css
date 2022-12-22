@@ -121,14 +121,14 @@ main {
 
 
 .hero-section .content p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 2;
     width: 95%;
     margin-top: 2rem;
     font-family: monospace;
 }
 
-.content #color {
+ #color {
     padding: 2.5rem 2.5em;
     color: ghostwhite;
     font-size: 1.5rem;
@@ -191,6 +191,57 @@ section h1 {
     margin-top: 10rem;
 }
 
+.sectoin-container {
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.polygon-support {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.whoWeAre h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 10rem;
+    font-family: sans-serif;
+}
+
+
+.whoWeAre-container .contents {
+    padding: 3rem 15%;
+}
+
+.whoWeAre-container .contents #ptag {
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1.8;
+    font-weight: 100;
+    display: block;
+    margin: 2rem;
+    color: #444;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.whoWeAre-container .contents .pbtn{
+  margin-left: 45%;
+  padding: 2.7rem 4em;
+  color: ghostwhite;
+  font-size: 1.5rem;
+  background-color: #7d0bfe;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
 @media (max-width:320px) {
     .hero-section {
         display: grid;
@@ -205,7 +256,7 @@ section h1 {
         margin-top: -8rem;
     }
 
-    .content #color {
+    #color {
         padding: 2rem 1.2em;
         color: ghostwhite;
         font-size: 2rem;
@@ -229,16 +280,32 @@ section h1 {
         margin-left: -2rem;
         margin-top: 6rem;
     }
-}
 
+    .whoWeAre-container .contents {
 
-.sectoin-container {
-    margin-top: 4rem;
-    width: 100%;
-}
+        padding: 2rem 5%;
+    }
 
-.polygon-support {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    .whoWeAre-container .contents #ptag {
+        font-size: 2rem;
+        text-align: center;
+        line-height: 1.8;
+        font-weight: 100;
+        display: block;
+        margin: 2rem;
+        color: #444;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .whoWeAre-container .contents .pbtn{
+        margin-left: 25%;
+        padding: 2rem 2em;
+        color: ghostwhite;
+        font-size: 1.5rem;
+        background-color: #7d0bfe;
+        border-radius: 0.5rem;
+        margin-top: 2rem;
+        cursor: pointer;
+        font-weight: bolder;
+      }
 }
