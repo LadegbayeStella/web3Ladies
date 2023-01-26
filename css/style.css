@@ -86,11 +86,9 @@ main {
 }
 
 .hero-section {
+    margin-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    margin-top: 5rem;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
 
 .content {
@@ -237,35 +235,43 @@ section h1 {
     font-weight: bolder;
 }
 
-.ourComunity {
-    padding: 2.7rem 6%;
-
-}
-
-
-.comunity {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    gap: 1rem;
+#myCommunity {
     background-color: #7d0bfe;
-    width: 100%;
-    height: 90vh;
+    margin: 0 auto;
+    display: block;
+    width: 95%;
+    height: 80%;
     border-radius: 30px;
-
 }
 
-.ourComunity .comunity .community-texts h1 {
+.community {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; */
+    /* gap: 4rem;
+   */
+}
+
+
+ 
+
+#myCommunity .community .community-texts h1 {
     font-size: 69px;
     font-family: monospace;
     font-weight: bolder;
     line-height: 1.2;
     color: ghostwhite;
+    display: flex;
     padding: 4rem 9%;
     margin-top: 5rem;
+    width: 50%;
 }
 
-.ourComunity .comunity .community-texts p {
+#myCommunity .community .community-texts p {
     font-size: 2.2rem;
     line-height: 1.8;
     width: 95%;
@@ -276,10 +282,12 @@ section h1 {
 }
 
 
-.ourComunity .comunity .community-texts a button {
+#myCommunity .community .community-texts a button {
     font-size: 2rem;
     line-height: 1.8;
     width: 50%;
+    height: 15%;
+    padding: 3rem;
     margin-top: 2rem;
     font-family: monospace;
     padding: 2rem 1em;
@@ -287,18 +295,30 @@ section h1 {
     margin-left: 5rem;
 }
 
-.comunity .community-img img {
-    width: 90%;
+.community .community-img img {
+    width: 100%;
     margin-top: 4rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    padding: 3rem 2em;
 }
 
-
-.ourNumbers {
+ .ourNumbers {
     background-color: black;
     height: 300px;
+    width: 70%;
+    margin: auto;
+    margin-top: 5rem;
     border-radius: 20px;
-    padding: 1rem 12%;
-    margin: 8rem;
+   /* padding: 1rem 12%;  */
+padding: 3rem 2em;
+} 
+
+.number{
+       margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
 }
 
 .ourNumbers h1 {
@@ -306,36 +326,42 @@ section h1 {
     font-size: 5rem;
     font-weight: bolder;
     color: black;
-    padding: 1rem 12%;
+    padding: 1rem 1%; 
     /* margin-top: 5rem; */
 }
 
 .numbers-container {
-    display: flex;
-    gap: 5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-
-
+   margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
 }
 
-.numbers-container .number {
-    margin-top: -4rem;
+
+.numbers-container .number { 
+     margin-top: -4rem;
 }
 
 .numbers-container .number h1 {
     color: ghostwhite;
     font-size: 6rem;
     font-weight: bolder;
-}
+} 
 
 .numbers-container .number p {
     color: #ff9edb;
     font-size: 2rem;
-}
+    text-align: center;
+} 
 
 .impact {
     padding: 5rem 4%;
+}
+
+
+.impact center h1 {
+    font-size: 6rem;
+    font-weight: bolder;
 }
 
 .impact-box {
@@ -347,14 +373,14 @@ section h1 {
 
 .impact-box .impact-texts {
     padding: 2rem 9%;
+    margin-top: -4rem;
 }
 
 
 .impact-box .img-impact {
     background-color: #f8f2ff;
     width: 100%;
-    height: 100vh;
-    margin-top: -5rem;
+    margin-top: 7rem;
 }
 
 .impact-box .img-impact img {
@@ -366,6 +392,7 @@ section h1 {
     font-family: Arial, sans-serif;
     color: #7d0bfe;
     font-size: 12rem;
+    margin-top: 6rem;
 }
 
 .impact-box .impact-texts h2 {
@@ -400,41 +427,38 @@ section h1 {
     font-weight: bolder;
 }
 
-.Highlights{
+.Highlights {
     padding: 4rem 6%;
-    /* margin-left: 5rem; */
 }
 
-.Highlights h1{
+.Highlights h1 {
     font-size: 8rem;
     margin-top: -3rem;
     font-family: sans-serif;
     font-weight: bolder;
 }
 
-.Highlights-box{
+.Highlights-box {
+    margin-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
-}
-
-.Highlights-img1{
-    margin-left: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
 }
 
 
-.Highlights-img1 img{
-width: 100%;
-height: 50%;
+.Highlights-img1 img {
+    width: 100%;
+    height: 50%;
 }
 
-.Highlights-img1 a{
+.Highlights-img1 a {
     background-color: rgb(231, 210, 255);
     font-size: 1rem;
     padding: 1rem 4em;
     border-radius: 1rem;
 }
-.Highlights-img1 .Hight-content p{
+
+.Highlights-img1 .Hight-content p {
     font-family: sans-serif;
     color: black;
     font-size: 2.5rem;
@@ -444,11 +468,130 @@ height: 50%;
     width: 70%;
 }
 
+.sponsor {
+    background-color: #7d0bfe;
+ height: 70%;
+}
+
+
+.sponsor .sponsor-box {
+   margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+    
+}
+
+.sponsor .sponsor-words {
+    background-color: black;
+    padding: 3rem 2rem;
+
+}
+
+.sponsor .sponsor-box .sponsor-words h3 {
+    font-size: 69px;
+    font-family: monospace;
+    font-weight: bolder;
+    line-height: 1.2;
+    padding: 4rem 9%;
+    color: ghostwhite;
+    margin-top: -5rem;
+}
+
+
+.sponsor .sponsor-box .sponsor-words p {
+    font-size: 29px;
+    font-family: monospace;
+    font-weight: bolder;
+    line-height: 1.2;
+    padding: 2rem 9%;
+    color: ghostwhite;
+    margin-top: 4rem;
+}
+
+
+.sponsor .sponsor-box .sponsor-words button {
+
+    margin: auto;
+    display: block;
+    width: 35%;
+    margin-top: 3rem;
+    margin-left: 20rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-family: monospace;
+    margin-top: 2rem;
+    height: 5rem;
+    padding: 3rem 2rem;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+#ecosytem{
+    background-color: #f8f2ff;
+    margin: auto;
+}
+
+.eco-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+.eco-container .header1 h1{ 
+      font-size: 49px;
+    font-family: monospace;
+    font-weight: bolder;
+    padding: 3rem 15%;
+    color: black;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.eco-container .header1 span{
+    color: #7d0bfe;
+}
+
+.eco-container .header1 button{
+       padding: 2rem 2em;
+    color: ghostwhite;
+    font-size: 1.5rem;
+    background-color: #7d0bfe;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    font-weight: bolder;
+    display: block;
+    margin: auto;
+}
+
+
+#ecosytem .icon-eco{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    gap: 4rem;
+}
+
+#ecosytem .icon-eco img{
+    color: rgb(195, 195, 199);
+    font-size: 1.5rem;
+    background-color:white;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+
+
 @media (max-width:320px) {
     .hero-section {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
+        width: 100%;
     }
 
     .hero-section .content h1 span {
@@ -511,59 +654,43 @@ height: 50%;
         font-weight: bolder;
     }
 
-    .ourComunity {
-        /* padding: 2.7rem 6%;    */
-        background-color: #7d0bfe;
+
+    #myCommunity  .community .community-texts p {
+        font-size: 2rem;
+        line-height: 1;
+        font-family: monospace;
+        color: #ff9edb;
         width: 100%;
-        height: 50rem;
-        border-radius: 30px;
     }
 
-
-    .comunity {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-        gap: 1rem;
-
-
-    }
-
-    .ourComunity .comunity .community-texts h1 {
-        font-size: 40px;
+    #myCommunity .community .community-texts h1 {
+        font-size: 49px;
         font-family: monospace;
         font-weight: bolder;
         line-height: 1.2;
         color: ghostwhite;
-        /* padding: 4rem 9%;  */
+        display: flex;
+        padding: 4rem 9%;
         margin-top: 5rem;
+        width: 50%;
+        text-align: center;
     }
 
-    .ourComunity .comunity .community-texts p {
-        font-size: 2rem;
-        line-height: 1;
-        /* width: 95%; */
-        /* margin-top: 2rem; */
-        font-family: monospace;
-        color: #ff9edb;
+    #myCommunity .community .community-texts a button {
+    margin-left: 25%;
+    padding: 2rem 2em;
+    color: black;
+    font-size: 1.5rem;
+    background-color:  ghostwhite;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: bolder;
+
+    }
+
+    #myCommunity .community  .community-img img {
         width: 100%;
-        /* padding: 2rem 7%; */
-    }
-
-
-    /* .ourComunity .comunity .community-texts a button {
-        font-size: 2rem;
-        line-height: 1.8;
-        /* width: 55%; */
-    /* margin-top: 2rem;
-        font-family: monospace;
-        padding: 2rem 7%;
-        border-radius: 0.5rem;
-        margin-left: 5rem; */
-    /* }  */
-
-    .comunity .community-img img {
-        width: 90%;
         margin-top: 4rem;
         display: none;
     }
@@ -582,7 +709,11 @@ height: 50%;
         gap: 1rem;
     }
 
+
+
     .impact-box .img-impact img {
+        width: 100%;
+        margin-top: 18rem;
         margin-left: 1rem;
     }
 
@@ -598,4 +729,65 @@ height: 50%;
         cursor: pointer;
         font-weight: bolder;
     }
+
+    
+
+
+    .Highlights h1 {
+        font-size: 4rem;
+        margin-top: -3rem;
+        font-family: sans-serif;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .Highlights-img1 .Hight-content p {
+        font-family: sans-serif;
+        color: black;
+        font-size: 2.5rem;
+        font-weight: lighter;
+        line-height: 1.5;
+        margin-top: 4rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .sponsor .sponsor-box .sponsor-words h3 {
+        font-size: 46px;
+        font-family: monospace;
+        font-weight: bolder;
+        color: ghostwhite;
+        text-align: center;
+    }
+
+
+    .sponsor .sponsor-box .sponsor-words p {
+        font-size: 19px;
+        font-family: monospace;
+        font-weight: bolder;
+        line-height: 1.2;
+        color: ghostwhite;
+        margin: 3rem;
+    }
+
+    .sponsor .sponsor-box .sponsor-words button {
+        font-size: 2rem;
+        width: 70%;
+        margin-top: -4rem;
+        font-family: monospace;
+        border-radius: 0.5rem;
+        margin-left: 4rem;
+    }
+
+    .impact-box .img-impact img {
+        width: 90%;
+        margin-top: 12rem;
+    }
+    
+
+    .eco-container img{
+display: none;
+    }
+    
+
 }
