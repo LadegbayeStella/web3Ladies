@@ -16,7 +16,7 @@
 
 
 html {
-    font-size: 60.25%;
+    font-size: 52%;
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
@@ -71,7 +71,7 @@ body {
 
 
 .navbar a {
-    color:  #444;
+    /* color:  #444;
     font-size: 2rem;
     margin-left: 2rem;
 }
@@ -82,9 +82,9 @@ body {
 
 .navbar.show{
     display: block;
-}
+} */
 
-@media (max-width: 767px) {
+ /* @media (max-width: 767px) {
 
     .navbar{
         margin-top: 2rem;
@@ -95,7 +95,7 @@ body {
         display: none;
         width: 100%;            
     }
-} */
+}  */
 
 
 .navbar {
@@ -150,19 +150,13 @@ body {
     height: 21px;
 }
 
-/* .toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-} */
+
 #menu-btn {
     display: none;
     font-size: 3.4rem;
     border-radius: .5rem;
     background: #eee;
     color: var(--ime-Green);
-    /* padding: 1rem; */
     cursor: pointer;
     margin-top:1rem ;
 }
@@ -203,36 +197,6 @@ body {
         display: flex;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 main {
     padding: 2rem 9%;
@@ -346,11 +310,12 @@ section h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5rem;
+    gap: 4rem;
     margin: 2rem;
     cursor: pointer;
-    font-size: 5rem;
+    font-size: 4rem;
 }
+
 
 .whoWeAre h1 {
     text-align: center;
@@ -361,7 +326,7 @@ section h1 {
 
 
 .whoWeAre-container .contents {
-    padding: 3rem 15%;
+    padding: 3rem 14%;
 }
 
 .whoWeAre-container .contents #ptag {
@@ -374,7 +339,6 @@ section h1 {
     color: #444;
     font-family: 'Times New Roman', Times, serif;
 }
-
 
 
 .whoWeAre-container .contents .pbtn {
@@ -393,7 +357,7 @@ section h1 {
     background-color: #7d0bfe;
     margin: 0 auto;
     display: block;
-    width: 95%;
+    width: 85%;
     height: 90%;
     border-radius: 30px;
 }
@@ -421,7 +385,7 @@ section h1 {
     font-size: 2.8rem;
     line-height: 1.8;
     width: 95%;
-    margin-top: -4rem;
+    margin-top: -6rem;
     font-family: monospace;
     color: #ff9edb;
     padding: 2rem 7%;
@@ -429,12 +393,13 @@ section h1 {
 
 
 #myCommunity .community .community-texts a button {
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 1.8;
     font-family: monospace;
     padding: 2rem 1em;
     border-radius: 0.5rem;
     margin-left: 8rem;
+    /* margin: 1rem; */
     border: solid 2.5px black;
 }
 
@@ -595,7 +560,7 @@ section h1 {
 
 
 .impact-box .impact-texts #impact {
-    padding: 3rem 4.5em;
+    padding: 2rem 3em;
     color: black;
     font-size: 1.5rem;
     background-color: ghostwhite;
@@ -650,8 +615,9 @@ section h1 {
 
 .sponsor {
     background-color: #7d0bfe;
+    width: 97%;
+    margin: auto;
 }
-
 .sponsor-img {
     margin: auto;
 }
@@ -678,13 +644,14 @@ section h1 {
 
 
 .sponsor .sponsor-box .sponsor-words p {
-    font-size: 29px;
+    font-size: 26px;
     font-family: monospace;
     font-weight: bolder;
     line-height: 1.2;
     padding: 2rem 5%;
     color: ghostwhite;
     width: 100%;
+    margin-top: -3rem;
 }
 
 
@@ -695,11 +662,14 @@ section h1 {
     border-radius: 0.5rem;
     font-size: 2rem;
     font-family: monospace;
-    padding: 2rem 5%;
+    /* padding: 2rem 5%; */
     cursor: pointer;
     position: relative;
     text-align: center;
+    /* width: 12rem;
+    margin-top: 3rem; */
 }
+
 
 #ecosytem {
     background-color: #f8f2ff;
@@ -989,6 +959,7 @@ footer {
     background-color: black;
     height: 100%;
     margin-top: 6rem;
+
 }
 
 .footer-container {
@@ -1000,8 +971,8 @@ footer {
 
 .footer-container .istsideOfFooter {
     border: solid 1.5px white;
-    width: 40%;
-    height: 400px;
+    width: 39%;
+    height: 370px;
     border-radius: 2.5rem;
     padding: 2em 3rem;
     margin-top: 6rem;
@@ -1017,10 +988,10 @@ footer {
 }
 
 .footer-container .istsideOfFooter form input {
-    padding: 2.5em 12rem;
+    padding: 2.1em 9rem;
     margin-top: 3rem;
     background-color: rgb(13, 13, 13);
-    border: solid 3px rgb(48, 48, 48);
+    border: solid 4px rgb(48, 48, 48);
     border-radius: 1.5rem;
     color: white;
 }
@@ -1039,7 +1010,7 @@ footer {
 }
 
 .footer-container .istsideOfFooter form input:hover {
-    padding: 2em 12rem;
+    padding: 2em 9rem;
     margin-top: 3rem;
     background-color: rgb(13, 13, 13);
     border: solid 3px #7d0bfe;
@@ -1126,15 +1097,6 @@ footer nav {
         margin-top: 2rem;
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1427,3 +1389,4 @@ footer nav {
     }
 
 }
+
